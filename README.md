@@ -1,4 +1,4 @@
-<h1 align="center">Kenko iOS</h1>
+<h1 align="center">Hapilk iOS</h1>
 <p align="center">
     <img src="https://img.shields.io/badge/Platform-iOS-lightgrey.svg"/>
     <img src="https://img.shields.io/badge/Swift-5-orange.svg"/>
