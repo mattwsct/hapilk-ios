@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1045397988997-1odlp772427oiq20coleb2ipdhd6b0rt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1045397988997-1odlp772427oiq20coleb2ipdhd6b0rt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1045397988997-mp64v8jo487vgar28fs44gfhr5sdrv4f.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCPNYTSxVbkYcdmb9juUvD8Zx-8XgndSTs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1045397988997</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.co.senkogrouphd.hapilk.staging</string>
+	<key>PROJECT_ID</key>
+	<string>senko-kenko-stg</string>
+	<key>STORAGE_BUCKET</key>
+	<string>senko-kenko-stg.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1045397988997:ios:9728fb84d26b6ec15bebec</string>
+	<key>DATABASE_URL</key>
+	<string>https://senko-kenko-stg.firebaseio.com</string>
+</dict>
+</plist>

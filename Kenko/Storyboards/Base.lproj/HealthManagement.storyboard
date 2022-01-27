@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="laf-nS-xTZ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--健康経営宣言-->
+        <scene sceneID="Phe-aA-Ruw">
+            <objects>
+                <viewController id="laf-nS-xTZ" customClass="HealthManagementDeclarationViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eKx-fX-wpl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-Kl-GPu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZWk-Kl-GPu" firstAttribute="leading" secondItem="J8F-f9-tcg" secondAttribute="leading" id="acz-uQ-RJw"/>
+                            <constraint firstItem="ZWk-Kl-GPu" firstAttribute="top" secondItem="J8F-f9-tcg" secondAttribute="top" id="e10-oO-45o"/>
+                            <constraint firstItem="J8F-f9-tcg" firstAttribute="bottom" secondItem="ZWk-Kl-GPu" secondAttribute="bottom" id="nSg-nW-GGi"/>
+                            <constraint firstItem="J8F-f9-tcg" firstAttribute="trailing" secondItem="ZWk-Kl-GPu" secondAttribute="trailing" id="xvV-XG-TEe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J8F-f9-tcg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="健康経営宣言" id="1Y3-O8-Jbk"/>
+                    <connections>
+                        <outlet property="healthManagementDeclarationTextView" destination="ZWk-Kl-GPu" id="ISn-1R-dFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMY-t3-DQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="3256"/>
+        </scene>
+    </scenes>
+</document>

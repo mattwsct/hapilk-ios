@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="grx-6I-mlP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ポイント-->
+        <scene sceneID="zVP-vD-IjI">
+            <objects>
+                <viewController id="grx-6I-mlP" customClass="PointsViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CBC-0v-omP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JJ-qg-Vkw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-M8-vRn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="744"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SQ-fE-j8M" customClass="GradientUIView" customModule="Kenko" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="-44" width="414" height="276"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2SQ-fE-j8M" secondAttribute="height" multiplier="3:2" id="6mc-eM-ur7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                        <color key="value" red="0.99888914819999997" green="0.54751598830000003" blue="0.38817059990000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                        <color key="value" red="1" green="0.69803921570000005" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiB-FC-cTm">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Vp-T7-CFW">
+                                                        <rect key="frame" x="20" y="20" width="374" height="192"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n36-Cl-gto">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="162.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpF-PA-szQ" customClass="ProfilePictureUIView" customModule="Kenko" customModuleProvider="target">
+                                                                        <rect key="frame" x="106" y="0.0" width="162" height="162.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="wpF-PA-szQ" secondAttribute="height" multiplier="1:1" id="VSR-Tl-kYB"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="wpF-PA-szQ" firstAttribute="centerY" secondItem="n36-Cl-gto" secondAttribute="centerY" id="49b-5k-56A"/>
+                                                                    <constraint firstItem="wpF-PA-szQ" firstAttribute="height" secondItem="n36-Cl-gto" secondAttribute="height" id="XP8-FI-PXI"/>
+                                                                    <constraint firstItem="wpF-PA-szQ" firstAttribute="centerX" secondItem="n36-Cl-gto" secondAttribute="centerX" id="l7X-Xj-MAK"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htD-s3-vSN">
+                                                                <rect key="frame" x="0.0" y="170.5" width="374" height="21.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="9Vp-T7-CFW" secondAttribute="trailing" constant="20" id="IEf-fG-jxs"/>
+                                                    <constraint firstItem="wpF-PA-szQ" firstAttribute="height" secondItem="wiB-FC-cTm" secondAttribute="height" multiplier="0.7" id="JnU-Fb-KlU"/>
+                                                    <constraint firstItem="9Vp-T7-CFW" firstAttribute="leading" secondItem="wiB-FC-cTm" secondAttribute="leading" constant="20" id="LoG-N5-bwL"/>
+                                                    <constraint firstItem="9Vp-T7-CFW" firstAttribute="centerY" secondItem="wiB-FC-cTm" secondAttribute="centerY" id="gcq-Iu-KqI"/>
+                                                    <constraint firstItem="9Vp-T7-CFW" firstAttribute="centerX" secondItem="wiB-FC-cTm" secondAttribute="centerX" id="zEn-nQ-uyj"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-tb-4Zy">
+                                                <rect key="frame" x="20" y="262" width="374" height="56.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHV-EK-8A9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目標達成で1ポイントゲット！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="val-lM-tJ8">
+                                                        <rect key="frame" x="0.0" y="37" width="374" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b5X-tK-11l">
+                                                <rect key="frame" x="52" y="348.5" width="310" height="245"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hgN-WR-fpl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2j7-a3-Mgs" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="2j7-a3-Mgs" secondAttribute="height" multiplier="1:1" id="V5a-Es-HCh"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="u39-g8-gOr"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JH-qU-XmO" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="E3Y-g2-cwg"/>
+                                                                    <constraint firstAttribute="width" secondItem="9JH-qU-XmO" secondAttribute="height" multiplier="1:1" id="XJf-WB-psc"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxh-SK-Ub8" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="4cD-At-5AG"/>
+                                                                    <constraint firstAttribute="width" secondItem="Vxh-SK-Ub8" secondAttribute="height" multiplier="1:1" id="hsb-at-UNb"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG9-yr-gq9" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="AG9-yr-gq9" secondAttribute="height" multiplier="1:1" id="JgR-yL-RX0"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="dpK-DF-Vjh"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSc-g1-rEu" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="JGJ-Dl-gFC"/>
+                                                                    <constraint firstAttribute="width" secondItem="tSc-g1-rEu" secondAttribute="height" multiplier="1:1" id="dZ3-7q-MlN"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="9JH-qU-XmO" firstAttribute="width" secondItem="9JH-qU-XmO" secondAttribute="height" multiplier="1:1" id="3GZ-ee-RAi"/>
+                                                            <constraint firstItem="Vxh-SK-Ub8" firstAttribute="width" secondItem="Vxh-SK-Ub8" secondAttribute="height" multiplier="1:1" id="ElC-1c-Oq0"/>
+                                                            <constraint firstItem="AG9-yr-gq9" firstAttribute="width" secondItem="AG9-yr-gq9" secondAttribute="height" multiplier="1:1" id="Fla-Hl-pRC"/>
+                                                            <constraint firstItem="tSc-g1-rEu" firstAttribute="width" secondItem="tSc-g1-rEu" secondAttribute="height" multiplier="1:1" id="d4o-8Q-INA"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-et-RZ1">
+                                                        <rect key="frame" x="0.0" y="65" width="310" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bV4-sm-Jpi" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bV4-sm-Jpi" secondAttribute="height" multiplier="1:1" id="ISp-a5-EXG"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="RX5-BA-wir"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="6"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-1S-00L" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="WNL-Zq-pZE"/>
+                                                                    <constraint firstAttribute="width" secondItem="uKj-1S-00L" secondAttribute="height" multiplier="1:1" id="aEw-Oh-M8v"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g72-PB-TkH" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="TkE-0z-ocw"/>
+                                                                    <constraint firstAttribute="width" secondItem="g72-PB-TkH" secondAttribute="height" multiplier="1:1" id="vzd-Za-W16"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKz-Dd-nXF" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="h1O-ED-69T"/>
+                                                                    <constraint firstAttribute="width" secondItem="JKz-Dd-nXF" secondAttribute="height" multiplier="1:1" id="oys-1M-slI"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="9"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70S-5G-Phd" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="5GN-JA-izj"/>
+                                                                    <constraint firstAttribute="width" secondItem="70S-5G-Phd" secondAttribute="height" multiplier="1:1" id="Xbf-kl-8Kt"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="70S-5G-Phd" firstAttribute="width" secondItem="70S-5G-Phd" secondAttribute="height" multiplier="1:1" id="Cr4-z1-g5i"/>
+                                                            <constraint firstItem="uKj-1S-00L" firstAttribute="width" secondItem="uKj-1S-00L" secondAttribute="height" multiplier="1:1" id="E35-ZI-DRV"/>
+                                                            <constraint firstItem="JKz-Dd-nXF" firstAttribute="width" secondItem="JKz-Dd-nXF" secondAttribute="height" multiplier="1:1" id="iG2-oV-o0W"/>
+                                                            <constraint firstItem="g72-PB-TkH" firstAttribute="width" secondItem="g72-PB-TkH" secondAttribute="height" multiplier="1:1" id="ryA-rY-FfW"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pz1-ep-Wqx">
+                                                        <rect key="frame" x="0.0" y="130" width="310" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-5B-rkz" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="ebz-Iu-Nxo"/>
+                                                                    <constraint firstAttribute="width" secondItem="UHC-5B-rkz" secondAttribute="height" multiplier="1:1" id="usN-bc-Ocm"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="11"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLH-Bo-ZCZ" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="aLH-Bo-ZCZ" secondAttribute="height" multiplier="1:1" id="HPW-yF-b5g"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="axO-Zc-VbY"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="12"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVH-I5-83x" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="MVH-I5-83x" secondAttribute="height" multiplier="1:1" id="Kko-qS-T2W"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="zY9-5y-Ih4"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfR-aL-Pys" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="MfR-aL-Pys" secondAttribute="height" multiplier="1:1" id="C4V-lb-ZBM"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="w0q-3i-XTO"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="14"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXF-RD-5vf" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="cQb-NG-LKu"/>
+                                                                    <constraint firstAttribute="width" secondItem="KXF-RD-5vf" secondAttribute="height" multiplier="1:1" id="vDk-X1-Q4a"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="KXF-RD-5vf" firstAttribute="width" secondItem="KXF-RD-5vf" secondAttribute="height" multiplier="1:1" id="ffz-ze-WLS"/>
+                                                            <constraint firstItem="MVH-I5-83x" firstAttribute="width" secondItem="MVH-I5-83x" secondAttribute="height" multiplier="1:1" id="hSV-V0-OgC"/>
+                                                            <constraint firstItem="aLH-Bo-ZCZ" firstAttribute="width" secondItem="aLH-Bo-ZCZ" secondAttribute="height" multiplier="1:1" id="nPo-xg-FtL"/>
+                                                            <constraint firstItem="MfR-aL-Pys" firstAttribute="width" secondItem="MfR-aL-Pys" secondAttribute="height" multiplier="1:1" id="z0B-ah-cZk"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-c5-A8o">
+                                                        <rect key="frame" x="0.0" y="195" width="310" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPw-W8-bP5" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="Teu-Dk-kP7"/>
+                                                                    <constraint firstAttribute="width" secondItem="rPw-W8-bP5" secondAttribute="height" multiplier="1:1" id="lT3-67-yrE"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-ea-mOr" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="ZVJ-rw-XGa"/>
+                                                                    <constraint firstAttribute="width" secondItem="qE6-ea-mOr" secondAttribute="height" multiplier="1:1" id="cUi-io-tKN"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="17"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usc-jU-Q9e" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="lmv-wZ-9pi"/>
+                                                                    <constraint firstAttribute="width" secondItem="usc-jU-Q9e" secondAttribute="height" multiplier="1:1" id="mDt-tM-o4X"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="18"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqg-XC-MEB" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="Anq-RN-GuH"/>
+                                                                    <constraint firstAttribute="width" secondItem="mqg-XC-MEB" secondAttribute="height" multiplier="1:1" id="Dg2-iu-LR7"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="19"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEM-8e-qPC" customClass="PointView" customModule="Kenko" customModuleProvider="target">
+                                                                <rect key="frame" x="260" y="0.0" width="50" height="50"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="Br6-iY-hI6"/>
+                                                                    <constraint firstAttribute="width" secondItem="mEM-8e-qPC" secondAttribute="height" multiplier="1:1" id="w5U-Gb-Qcn"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="mEM-8e-qPC" firstAttribute="width" secondItem="mEM-8e-qPC" secondAttribute="height" multiplier="1:1" id="4RQ-9M-VIm"/>
+                                                            <constraint firstItem="usc-jU-Q9e" firstAttribute="width" secondItem="usc-jU-Q9e" secondAttribute="height" multiplier="1:1" id="8PR-TC-aLe"/>
+                                                            <constraint firstItem="qE6-ea-mOr" firstAttribute="width" secondItem="qE6-ea-mOr" secondAttribute="height" multiplier="1:1" id="ZcN-1P-k3h"/>
+                                                            <constraint firstItem="mqg-XC-MEB" firstAttribute="width" secondItem="mqg-XC-MEB" secondAttribute="height" multiplier="1:1" id="aC6-Mv-TE9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20ポイント達成でチケットが1枚貰えます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frw-Ad-TPe">
+                                                <rect key="frame" x="52" y="623.5" width="310" height="50"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="vaA-tS-Lue"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.22741732000000001" green="0.4551274776" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チケット保有枚数 : 0枚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT6-Iv-slT">
+                                                <rect key="frame" x="20" y="703.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wiB-FC-cTm" firstAttribute="bottom" secondItem="2SQ-fE-j8M" secondAttribute="bottom" id="1vW-uH-hiY"/>
+                                            <constraint firstItem="2SQ-fE-j8M" firstAttribute="leading" secondItem="dgv-M8-vRn" secondAttribute="leading" id="2Ke-Cc-5nq"/>
+                                            <constraint firstItem="ybW-tb-4Zy" firstAttribute="leading" secondItem="dgv-M8-vRn" secondAttribute="leading" constant="20" id="3SG-wC-EZC"/>
+                                            <constraint firstAttribute="top" secondItem="2SQ-fE-j8M" secondAttribute="top" constant="44" id="A5u-ks-lNP"/>
+                                            <constraint firstItem="b5X-tK-11l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dgv-M8-vRn" secondAttribute="leading" constant="20" id="BhR-Nm-bUo"/>
+                                            <constraint firstItem="b5X-tK-11l" firstAttribute="centerX" secondItem="dgv-M8-vRn" secondAttribute="centerX" id="HrF-4a-CD4"/>
+                                            <constraint firstItem="wiB-FC-cTm" firstAttribute="top" secondItem="2SQ-fE-j8M" secondAttribute="top" constant="44" id="Idq-gU-HOB"/>
+                                            <constraint firstAttribute="trailing" secondItem="2SQ-fE-j8M" secondAttribute="trailing" id="J3a-d3-HDu"/>
+                                            <constraint firstAttribute="height" priority="250" constant="500" id="JRa-j8-dPC"/>
+                                            <constraint firstAttribute="trailing" secondItem="wiB-FC-cTm" secondAttribute="trailing" id="L8D-xz-fU1"/>
+                                            <constraint firstItem="Frw-Ad-TPe" firstAttribute="centerX" secondItem="dgv-M8-vRn" secondAttribute="centerX" id="OtF-Ym-ULT"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b5X-tK-11l" secondAttribute="trailing" constant="20" id="StG-LY-SmG"/>
+                                            <constraint firstItem="b5X-tK-11l" firstAttribute="top" secondItem="ybW-tb-4Zy" secondAttribute="bottom" constant="30" id="Z1Q-eD-GAT"/>
+                                            <constraint firstItem="wiB-FC-cTm" firstAttribute="leading" secondItem="dgv-M8-vRn" secondAttribute="leading" id="aPH-qh-wlt"/>
+                                            <constraint firstItem="Frw-Ad-TPe" firstAttribute="top" secondItem="b5X-tK-11l" secondAttribute="bottom" constant="30" id="cWF-35-sbD"/>
+                                            <constraint firstAttribute="trailing" secondItem="ybW-tb-4Zy" secondAttribute="trailing" constant="20" id="cb5-4o-KYi"/>
+                                            <constraint firstItem="ybW-tb-4Zy" firstAttribute="top" secondItem="2SQ-fE-j8M" secondAttribute="bottom" constant="30" id="e3r-tU-EJB"/>
+                                            <constraint firstItem="gT6-Iv-slT" firstAttribute="leading" secondItem="dgv-M8-vRn" secondAttribute="leading" constant="20" id="e5T-U4-O67"/>
+                                            <constraint firstItem="2SQ-fE-j8M" firstAttribute="width" secondItem="dgv-M8-vRn" secondAttribute="width" id="eT1-OY-WXw"/>
+                                            <constraint firstItem="Frw-Ad-TPe" firstAttribute="width" secondItem="b5X-tK-11l" secondAttribute="width" id="sIv-Wp-1sh"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gT6-Iv-slT" secondAttribute="bottom" constant="20" id="x0f-Nv-J8m"/>
+                                            <constraint firstAttribute="trailing" secondItem="gT6-Iv-slT" secondAttribute="trailing" constant="20" id="y8Z-iJ-GaZ"/>
+                                            <constraint firstItem="gT6-Iv-slT" firstAttribute="top" secondItem="Frw-Ad-TPe" secondAttribute="bottom" constant="30" id="ykh-KW-zj6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dgv-M8-vRn" firstAttribute="leading" secondItem="8JJ-qg-Vkw" secondAttribute="leading" id="5ap-Gq-iGe"/>
+                                    <constraint firstItem="dgv-M8-vRn" firstAttribute="centerX" secondItem="8JJ-qg-Vkw" secondAttribute="centerX" id="9Sh-GV-pFq"/>
+                                    <constraint firstItem="dgv-M8-vRn" firstAttribute="top" secondItem="8JJ-qg-Vkw" secondAttribute="top" id="QCn-3Z-7rl"/>
+                                    <constraint firstAttribute="trailing" secondItem="dgv-M8-vRn" secondAttribute="trailing" id="aEQ-PU-wfN"/>
+                                    <constraint firstItem="dgv-M8-vRn" firstAttribute="width" secondItem="8JJ-qg-Vkw" secondAttribute="width" id="k9f-IB-Bbx"/>
+                                    <constraint firstAttribute="bottom" secondItem="dgv-M8-vRn" secondAttribute="bottom" id="mxz-sK-Fu7"/>
+                                </constraints>
+                            </scrollView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iG4-Z2-sTF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMING SOON..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-vl-SDG">
+                                <rect key="frame" x="20" y="408.5" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.1127823219" green="0.46239876749999997" blue="0.99724966289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LIH-Zn-lgj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8JJ-qg-Vkw" firstAttribute="top" secondItem="CBC-0v-omP" secondAttribute="top" id="68v-HY-2WG"/>
+                            <constraint firstItem="8JJ-qg-Vkw" firstAttribute="trailing" secondItem="oRA-O5-Aid" secondAttribute="trailing" id="6In-WI-36w"/>
+                            <constraint firstItem="iG4-Z2-sTF" firstAttribute="top" secondItem="CBC-0v-omP" secondAttribute="top" id="6UD-j7-yq7"/>
+                            <constraint firstItem="ELO-vl-SDG" firstAttribute="centerX" secondItem="oRA-O5-Aid" secondAttribute="centerX" id="BTZ-Ug-z96"/>
+                            <constraint firstItem="8JJ-qg-Vkw" firstAttribute="leading" secondItem="oRA-O5-Aid" secondAttribute="leading" id="Bpd-b5-z2p"/>
+                            <constraint firstItem="oRA-O5-Aid" firstAttribute="trailing" secondItem="ELO-vl-SDG" secondAttribute="trailing" constant="20" id="ZJi-Aq-vEK"/>
+                            <constraint firstItem="iG4-Z2-sTF" firstAttribute="trailing" secondItem="oRA-O5-Aid" secondAttribute="trailing" id="c2x-y0-pjV"/>
+                            <constraint firstItem="8JJ-qg-Vkw" firstAttribute="bottom" secondItem="oRA-O5-Aid" secondAttribute="bottom" id="fle-To-6d4"/>
+                            <constraint firstItem="ELO-vl-SDG" firstAttribute="centerY" secondItem="oRA-O5-Aid" secondAttribute="centerY" id="jhn-aU-CRu"/>
+                            <constraint firstItem="iG4-Z2-sTF" firstAttribute="leading" secondItem="oRA-O5-Aid" secondAttribute="leading" id="o0w-Wi-u4T"/>
+                            <constraint firstItem="ELO-vl-SDG" firstAttribute="leading" secondItem="oRA-O5-Aid" secondAttribute="leading" constant="20" id="uIN-KU-Umb"/>
+                            <constraint firstAttribute="bottom" secondItem="iG4-Z2-sTF" secondAttribute="bottom" id="zuh-iu-cRQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oRA-O5-Aid"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ポイント" image="Points_Inactive" selectedImage="Points_Active" id="SuS-JA-XNJ" customClass="ColoredUITabBarItem" customModule="Kenko" customModuleProvider="target"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pointsToTicketLabel" destination="Frw-Ad-TPe" id="FKF-GO-1kR"/>
+                        <outlet property="profilePictureView" destination="wpF-PA-szQ" id="rTa-WU-MX4"/>
+                        <outlet property="rewardsView" destination="8JJ-qg-Vkw" id="Oe0-2M-rM7"/>
+                        <outlet property="ticketsLabel" destination="gT6-Iv-slT" id="2Us-Ci-u6q"/>
+                        <outlet property="userNameLabel" destination="htD-s3-vSN" id="DGE-Jk-Oxw"/>
+                        <outletCollection property="pointsViews" destination="2j7-a3-Mgs" collectionClass="NSMutableArray" id="T3j-TV-Nr8"/>
+                        <outletCollection property="pointsViews" destination="9JH-qU-XmO" collectionClass="NSMutableArray" id="k8Q-V7-tne"/>
+                        <outletCollection property="pointsViews" destination="Vxh-SK-Ub8" collectionClass="NSMutableArray" id="bWE-wE-olk"/>
+                        <outletCollection property="pointsViews" destination="AG9-yr-gq9" collectionClass="NSMutableArray" id="Rhp-lj-60b"/>
+                        <outletCollection property="pointsViews" destination="tSc-g1-rEu" collectionClass="NSMutableArray" id="JXh-TC-E0i"/>
+                        <outletCollection property="pointsViews" destination="bV4-sm-Jpi" collectionClass="NSMutableArray" id="fjq-A5-7R5"/>
+                        <outletCollection property="pointsViews" destination="uKj-1S-00L" collectionClass="NSMutableArray" id="Ml8-He-ov6"/>
+                        <outletCollection property="pointsViews" destination="g72-PB-TkH" collectionClass="NSMutableArray" id="ycp-ZL-tSz"/>
+                        <outletCollection property="pointsViews" destination="JKz-Dd-nXF" collectionClass="NSMutableArray" id="fM0-RU-5Fw"/>
+                        <outletCollection property="pointsViews" destination="70S-5G-Phd" collectionClass="NSMutableArray" id="z0o-a2-f5W"/>
+                        <outletCollection property="pointsViews" destination="UHC-5B-rkz" collectionClass="NSMutableArray" id="13q-eD-wKx"/>
+                        <outletCollection property="pointsViews" destination="aLH-Bo-ZCZ" collectionClass="NSMutableArray" id="xib-nA-X2x"/>
+                        <outletCollection property="pointsViews" destination="MVH-I5-83x" collectionClass="NSMutableArray" id="Jik-Ul-KOH"/>
+                        <outletCollection property="pointsViews" destination="MfR-aL-Pys" collectionClass="NSMutableArray" id="TdB-S6-Tfb"/>
+                        <outletCollection property="pointsViews" destination="KXF-RD-5vf" collectionClass="NSMutableArray" id="2zI-oY-knt"/>
+                        <outletCollection property="pointsViews" destination="rPw-W8-bP5" collectionClass="NSMutableArray" id="q5a-Ur-v62"/>
+                        <outletCollection property="pointsViews" destination="qE6-ea-mOr" collectionClass="NSMutableArray" id="fyI-Gk-QZ2"/>
+                        <outletCollection property="pointsViews" destination="usc-jU-Q9e" collectionClass="NSMutableArray" id="bed-ko-scz"/>
+                        <outletCollection property="pointsViews" destination="mqg-XC-MEB" collectionClass="NSMutableArray" id="8xC-Rm-a6s"/>
+                        <outletCollection property="pointsViews" destination="mEM-8e-qPC" collectionClass="NSMutableArray" id="JUA-oH-z9H"/>
+                        <segue destination="Hs7-6m-YsH" kind="presentation" identifier="showTicketView" modalTransitionStyle="flipHorizontal" id="5PT-Ih-V6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQe-li-Y4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="2826.5625"/>
+        </scene>
+        <!--Ticket View Controller-->
+        <scene sceneID="oB8-Xv-ljM">
+            <objects>
+                <viewController id="Hs7-6m-YsH" customClass="TicketViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjR-dm-q0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlR-9B-3Kg">
+                                <rect key="frame" x="50" y="204.5" width="314" height="399"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Close" translatesAutoresizingMaskIntoConstraints="NO" id="vja-td-vhO">
+                                        <rect key="frame" x="274" y="20" width="20" height="20"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vja-td-vhO" secondAttribute="height" multiplier="1:1" id="DdH-8P-Pth"/>
+                                            <constraint firstAttribute="width" constant="20" id="dDd-DL-e23"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Fc0-l2-BWD" appends="YES" id="4bs-xC-uX1"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="70f-Fy-I96">
+                                        <rect key="frame" x="10" y="66.5" width="294" height="332.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU GOT A TICKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-Bp-7GO">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チケットを獲得しました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-3e-ymt">
+                                                <rect key="frame" x="0.0" y="49" width="294" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ticket" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-doE">
+                                                <rect key="frame" x="0.0" y="88.5" width="294" height="244"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9Jt-ri-doE" secondAttribute="height" multiplier="1.2" constant="1" id="VN3-52-BXN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="70f-Fy-I96" firstAttribute="leading" secondItem="QlR-9B-3Kg" secondAttribute="leading" constant="10" id="5Pm-48-xWd"/>
+                                    <constraint firstAttribute="bottom" secondItem="70f-Fy-I96" secondAttribute="bottom" id="MAW-GL-8ap"/>
+                                    <constraint firstAttribute="height" secondItem="70f-Fy-I96" secondAttribute="height" multiplier="1.2" id="PNu-ZX-IwP"/>
+                                    <constraint firstItem="vja-td-vhO" firstAttribute="top" secondItem="QlR-9B-3Kg" secondAttribute="top" constant="20" id="dOi-CP-Pk3"/>
+                                    <constraint firstAttribute="trailing" secondItem="70f-Fy-I96" secondAttribute="trailing" constant="10" id="eiq-qk-zgV"/>
+                                    <constraint firstAttribute="trailing" secondItem="vja-td-vhO" secondAttribute="trailing" constant="20" id="rGp-fN-7ts"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QlR-9B-3Kg" firstAttribute="centerX" secondItem="UMZ-DH-wrr" secondAttribute="centerX" id="COU-PC-wbw"/>
+                            <constraint firstItem="QlR-9B-3Kg" firstAttribute="centerY" secondItem="UMZ-DH-wrr" secondAttribute="centerY" id="m20-N0-e8I"/>
+                            <constraint firstItem="QlR-9B-3Kg" firstAttribute="leading" secondItem="UMZ-DH-wrr" secondAttribute="leading" constant="50" id="wJJ-42-iHJ"/>
+                            <constraint firstItem="UMZ-DH-wrr" firstAttribute="trailing" secondItem="QlR-9B-3Kg" secondAttribute="trailing" constant="50" id="x5i-qd-Kdp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UMZ-DH-wrr"/>
+                    </view>
+                    <connections>
+                        <outlet property="ticketView" destination="QlR-9B-3Kg" id="Cl9-AB-IQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDh-CB-kOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Fc0-l2-BWD">
+                    <connections>
+                        <action selector="closePopupView:" destination="Hs7-6m-YsH" id="lgi-VY-shR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1882.608695652174" y="2826.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Close" width="26" height="26"/>
+        <image name="Points_Active" width="26" height="26"/>
+        <image name="Points_Inactive" width="26" height="26"/>
+        <image name="Ticket" width="232" height="146"/>
+    </resources>
+</document>

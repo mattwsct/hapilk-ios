@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>541268523710-ln5n85hmaggde5ihhdp01js48q99kalh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.541268523710-ln5n85hmaggde5ihhdp01js48q99kalh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8Gj7cTFNgGCxw3T8h8Lke2vCpu7IsgHw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>541268523710</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.co.senkogrouphd.hapilk</string>
+	<key>PROJECT_ID</key>
+	<string>senko-kenko-prd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>senko-kenko-prd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:541268523710:ios:a012c4364fc57aca6d7cef</string>
+	<key>DATABASE_URL</key>
+	<string>https://senko-kenko-prd.firebaseio.com</string>
+</dict>
+</plist>

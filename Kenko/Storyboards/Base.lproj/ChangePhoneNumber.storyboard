@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ucc-no-M13">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--電話番号の変更-->
+        <scene sceneID="9IO-yd-0hC">
+            <objects>
+                <viewController id="Ucc-no-M13" customClass="ChangePhoneNumberViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9X-6k-DAw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tDL-Yy-5Vd">
+                                <rect key="frame" x="20" y="271" width="374" height="364"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在の電話番号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-qT-kin">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0J-Sr-9dr">
+                                        <rect key="frame" x="0.0" y="50.5" width="374" height="125"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-6v-KI7">
+                                                <rect key="frame" x="119.5" y="50.5" width="135.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="m4M-6v-KI7" firstAttribute="centerY" secondItem="b0J-Sr-9dr" secondAttribute="centerY" id="5ZY-2e-VuC"/>
+                                            <constraint firstItem="m4M-6v-KI7" firstAttribute="centerX" secondItem="b0J-Sr-9dr" secondAttribute="centerX" id="dwZ-wD-oSj"/>
+                                            <constraint firstAttribute="width" secondItem="b0J-Sr-9dr" secondAttribute="height" multiplier="3:1" id="t5C-Fh-cWl"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しい電話番号を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01r-dJ-Sbc">
+                                        <rect key="frame" x="0.0" y="205.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yr7-da-qbp">
+                                        <rect key="frame" x="0.0" y="256" width="374" height="108"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新しい電話番号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-fn-d3X" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CFg-fm-jla"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfk-i7-gn3" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5JZ-02-PyA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="電話認証を開始します">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="verifyPhoneNumber:" destination="Ucc-no-M13" eventType="touchUpInside" id="pbB-3T-pN6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tDL-Yy-5Vd" firstAttribute="centerX" secondItem="bXe-QR-1mT" secondAttribute="centerX" id="1e0-7M-NaL"/>
+                            <constraint firstItem="tDL-Yy-5Vd" firstAttribute="centerY" secondItem="bXe-QR-1mT" secondAttribute="centerY" id="8zQ-eO-Ig5"/>
+                            <constraint firstItem="tDL-Yy-5Vd" firstAttribute="leading" secondItem="bXe-QR-1mT" secondAttribute="leading" constant="20" id="9UO-23-kVd"/>
+                            <constraint firstItem="bXe-QR-1mT" firstAttribute="trailing" secondItem="tDL-Yy-5Vd" secondAttribute="trailing" constant="20" id="PHt-Pu-RGk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bXe-QR-1mT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="電話番号の変更" id="jI2-aB-7SS"/>
+                    <connections>
+                        <outlet property="phoneNumberLabel" destination="m4M-6v-KI7" id="iEf-6N-CSJ"/>
+                        <outlet property="phoneNumberTextField" destination="gDW-fn-d3X" id="gGd-rF-h42"/>
+                        <outlet property="phoneNumberWrapperView" destination="b0J-Sr-9dr" id="fua-3B-CSu"/>
+                        <segue destination="7xc-zX-X7L" kind="show" identifier="showVerifyCodeView" id="XPA-Ja-CWM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4f-AT-eY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4078" y="3378"/>
+        </scene>
+        <!--電話番号の変更-->
+        <scene sceneID="SqA-QK-XIg">
+            <objects>
+                <viewController id="7xc-zX-X7L" customClass="ChangePhoneNumberViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWW-JG-uzn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hNx-in-I7q">
+                                <rect key="frame" x="20" y="193" width="374" height="422"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しい電話番号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O50-6p-kcG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26S-9v-3Cv">
+                                        <rect key="frame" x="0.0" y="50.5" width="374" height="125"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARE-46-4JS">
+                                                <rect key="frame" x="119.5" y="50.5" width="135.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="26S-9v-3Cv" secondAttribute="height" multiplier="3:1" id="NOA-g0-fjx"/>
+                                            <constraint firstItem="ARE-46-4JS" firstAttribute="centerX" secondItem="26S-9v-3Cv" secondAttribute="centerX" id="VQE-ci-tq8"/>
+                                            <constraint firstItem="ARE-46-4JS" firstAttribute="centerY" secondItem="26S-9v-3Cv" secondAttribute="centerY" id="zny-Bd-rgR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMSを確認して下さい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-J7-6xp">
+                                        <rect key="frame" x="0.0" y="205.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rdb-Mp-847">
+                                        <rect key="frame" x="0.0" y="256" width="374" height="166"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="認証番号を入力して下さい" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-9C-vNa" customClass="RoundedUITextField" customModule="Kenko" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="omp-1e-mQK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpY-RU-aqY" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="T0Z-Mf-xCH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="確認">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="verify:" destination="7xc-zX-X7L" eventType="touchUpInside" id="SY1-tp-vHj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YO-7y-ET4" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="116" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pTa-cE-Xet"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="認証番号を再送する">
+                                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resendVerificationCode:" destination="7xc-zX-X7L" eventType="touchUpInside" id="uaf-6P-m47"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hNx-in-I7q" firstAttribute="centerY" secondItem="KpW-T9-3XQ" secondAttribute="centerY" id="VXd-0y-yFE"/>
+                            <constraint firstItem="hNx-in-I7q" firstAttribute="centerX" secondItem="KpW-T9-3XQ" secondAttribute="centerX" id="ec4-dd-FMu"/>
+                            <constraint firstItem="hNx-in-I7q" firstAttribute="leading" secondItem="KpW-T9-3XQ" secondAttribute="leading" constant="20" id="f99-L7-T3p"/>
+                            <constraint firstItem="KpW-T9-3XQ" firstAttribute="trailing" secondItem="hNx-in-I7q" secondAttribute="trailing" constant="20" id="hvw-NN-sbl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KpW-T9-3XQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="電話番号の変更" id="NeK-hd-cz1"/>
+                    <connections>
+                        <outlet property="phoneNumberLabel" destination="ARE-46-4JS" id="RVr-1z-LYX"/>
+                        <outlet property="phoneNumberWrapperView" destination="26S-9v-3Cv" id="h1T-cL-Rl9"/>
+                        <outlet property="verificationCodeTextField" destination="8qy-9C-vNa" id="6OD-yb-I5U"/>
+                        <segue destination="W40-HW-Dt2" kind="unwind" identifier="showSettingsView" unwindAction="unwindToSettings:" id="HNI-c6-i1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6a-8P-mRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="W40-HW-Dt2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4903" y="3378"/>
+        </scene>
+    </scenes>
+</document>

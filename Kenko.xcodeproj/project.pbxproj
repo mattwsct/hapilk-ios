@@ -1,0 +1,1319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F55AC0096E63DD84487597B /* Pods_Kenko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FF6ED1B41D86A7078921F /* Pods_Kenko.framework */; };
+		6B0C341D22F7A002008FD314 /* IndividualRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C341C22F7A002008FD314 /* IndividualRankingViewController.swift */; };
+		6B0C341F22F7A1B0008FD314 /* UserRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C341E22F7A1B0008FD314 /* UserRankingTableViewCell.swift */; };
+		6B0C342122F7A5F1008FD314 /* RankingInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C342022F7A5F1008FD314 /* RankingInformation.swift */; };
+		6B0C342322F7D164008FD314 /* RankingSwipeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C342222F7D164008FD314 /* RankingSwipeMenuViewController.swift */; };
+		6B0C342722F7EA10008FD314 /* RankingSwipeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C342622F7EA10008FD314 /* RankingSwipeMenuView.swift */; };
+		6B1C82C9235FCE800067E7B2 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C82C8235FCE800067E7B2 /* TicketViewController.swift */; };
+		6B1D22D122C0BA080031A0AE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D22D022C0BA080031A0AE /* DashboardViewController.swift */; };
+		6B25D17A22BB22AB006D1AC8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25D17922BB22AB006D1AC8 /* OnboardingViewController.swift */; };
+		6B31FC1D22C9C38B008F7E4C /* GradientUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31FC1C22C9C38B008F7E4C /* GradientUIView.swift */; };
+		6B36B43822B709CD008957CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36B43722B709CD008957CA /* AppDelegate.swift */; };
+		6B36B43A22B709CD008957CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36B43922B709CD008957CA /* ViewController.swift */; };
+		6B36B43F22B709CE008957CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B36B43E22B709CE008957CA /* Assets.xcassets */; };
+		6B36B44D22B709CE008957CA /* KenkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36B44C22B709CE008957CA /* KenkoTests.swift */; };
+		6B39506A22CDE24D008F3799 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39506922CDE24D008F3799 /* SettingsViewController.swift */; };
+		6B39506C22E52550008F3799 /* ColoredUITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39506B22E52550008F3799 /* ColoredUITabBarItem.swift */; };
+		6B407253230A1997004A01DC /* HealthManagementDeclarationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B407252230A1997004A01DC /* HealthManagementDeclarationViewController.swift */; };
+		6B54AB1F230BC20600967E9D /* EditDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54AB1E230BC20600967E9D /* EditDashboardViewController.swift */; };
+		6B5C8C9C22E981140054C82E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C8C9B22E981140054C82E /* UserProfile.swift */; };
+		6B5D850822CC461400DB823B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D850722CC461400DB823B /* Network.swift */; };
+		6B5D851022CD8C8100DB823B /* UIViewController+ValidationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D850F22CD8C8100DB823B /* UIViewController+ValidationAlert.swift */; };
+		6B5D8EC222B717DB001B4AF5 /* RoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D8EC122B717DB001B4AF5 /* RoundedUIButton.swift */; };
+		6B5D8EC422B717EE001B4AF5 /* RoundedUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D8EC322B717EE001B4AF5 /* RoundedUITextField.swift */; };
+		6B5F71BD22C0C1E1008482C7 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F71BC22C0C1E1008482C7 /* HealthService.swift */; };
+		6B612FC5230295AB006C7BEA /* String+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B612FC4230295AB006C7BEA /* String+Decode.swift */; };
+		6B612FC723039373006C7BEA /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B612FC623039373006C7BEA /* PointsViewController.swift */; };
+		6B612FCB23039599006C7BEA /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B612FCA23039599006C7BEA /* PointView.swift */; };
+		6B61BAB22361214C0003FFBA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61BAB12361214C0003FFBA /* NavigationViewController.swift */; };
+		6B653AD622CAD7EE00CC21EA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B653AD522CAD7EE00CC21EA /* ForgotPasswordViewController.swift */; };
+		6B653AD822CAE59F00CC21EA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B653AD722CAE59F00CC21EA /* Validation.swift */; };
+		6B6C602B22B876BC003B0D84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C602A22B876BC003B0D84 /* LoginViewController.swift */; };
+		6B6C602D22B87E8C003B0D84 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C602C22B87E8C003B0D84 /* RegistrationViewController.swift */; };
+		6B715A422345E307000DEF34 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A442345E307000DEF34 /* Dashboard.storyboard */; };
+		6B715A452345E325000DEF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A472345E325000DEF34 /* LaunchScreen.storyboard */; };
+		6B715A482345E328000DEF34 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A4A2345E328000DEF34 /* Navigation.storyboard */; };
+		6B715A4B2345E330000DEF34 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A4D2345E330000DEF34 /* ForgotPassword.storyboard */; };
+		6B715A4E2345E335000DEF34 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A502345E335000DEF34 /* Login.storyboard */; };
+		6B715A512345E339000DEF34 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A532345E339000DEF34 /* Onboarding.storyboard */; };
+		6B715A542345E33C000DEF34 /* Points.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A562345E33C000DEF34 /* Points.storyboard */; };
+		6B715A572345E33F000DEF34 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A592345E33F000DEF34 /* Registration.storyboard */; };
+		6B715A5A2345E343000DEF34 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A5C2345E343000DEF34 /* Ranking.storyboard */; };
+		6B715A5D2345E346000DEF34 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A5F2345E346000DEF34 /* Settings.storyboard */; };
+		6B715A602345E34A000DEF34 /* Terms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A622345E34A000DEF34 /* Terms.storyboard */; };
+		6B715A632345E34D000DEF34 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A652345E34D000DEF34 /* Profile.storyboard */; };
+		6B715A662345E350000DEF34 /* ChangePhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A682345E350000DEF34 /* ChangePhoneNumber.storyboard */; };
+		6B715A692345E353000DEF34 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A6B2345E353000DEF34 /* ChangePassword.storyboard */; };
+		6B715A6C2345E357000DEF34 /* HealthManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A6E2345E357000DEF34 /* HealthManagement.storyboard */; };
+		6B715A6F2345E35B000DEF34 /* Share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A712345E35B000DEF34 /* Share.storyboard */; };
+		6B715A722345E35F000DEF34 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B715A742345E35F000DEF34 /* ContactUs.storyboard */; };
+		6B729EBB2330AFC0005BA10C /* UITextField+MaxLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B729EBA2330AFC0005BA10C /* UITextField+MaxLength.swift */; };
+		6B77BEB222C32F8500707C51 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5F71B122C0BE22008482C7 /* HealthKit.framework */; };
+		6B7E8FFD22C48F5A00BD38B9 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7E8FFC22C48F5A00BD38B9 /* TermsViewController.swift */; };
+		6B82DE3E22F3AEA8008790F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82DE3D22F3AEA8008790F6 /* Colors.swift */; };
+		6B84494922EE6BAC00CB329C /* SenkoOffices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84494822EE6BAC00CB329C /* SenkoOffices.swift */; };
+		6B84494F22EE6E6600CB329C /* JapanPrefectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84494E22EE6E6600CB329C /* JapanPrefectures.swift */; };
+		6B899FC82339E87F0016AB54 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B899FC72339E87F0016AB54 /* ContactUsViewController.swift */; };
+		6B996E5D2329DAC80014E721 /* UIViewController+CanPerformSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B996E5C2329DAC80014E721 /* UIViewController+CanPerformSegue.swift */; };
+		6BA69F3722FB9B7C002B1B45 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA69F3622FB9B7C002B1B45 /* HealthData.swift */; };
+		6BA702DE2343121E00BE9E50 /* CompanyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA702DD2343121E00BE9E50 /* CompanyRankingTableViewCell.swift */; };
+		6BB7B71B2384B08A003A21BF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7B71A2384B08A003A21BF /* CheckBox.swift */; };
+		6BB8392822F944C800EFB7C7 /* GeneralRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8392722F944C800EFB7C7 /* GeneralRankingTableViewCell.swift */; };
+		6BBBA0C12332FC8E00AE4A3D /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBA0C02332FC8E00AE4A3D /* NotificationsService.swift */; };
+		6BCA7147237E962000C8046F /* Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA7146237E962000C8046F /* Announcements.storyboard */; };
+		6BCA714B2382210300C8046F /* Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA714A2382210300C8046F /* Announcements.swift */; };
+		6BCA714D238231FF00C8046F /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA714C238231FF00C8046F /* AnnouncementsViewController.swift */; };
+		6BCA714F238236B000C8046F /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA714E238236B000C8046F /* AnnouncementViewController.swift */; };
+		6BD830242313B388001C8ECE /* PrefectureRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD830232313B388001C8ECE /* PrefectureRankingViewController.swift */; };
+		6BD830262313B39E001C8ECE /* AgeRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD830252313B39E001C8ECE /* AgeRankingViewController.swift */; };
+		6BD8302C2313B6D2001C8ECE /* CompanyRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8302B2313B6D2001C8ECE /* CompanyRankingViewController.swift */; };
+		6BD8302E2313C57D001C8ECE /* Double+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8302D2313C57D001C8ECE /* Double+Formatted.swift */; };
+		6BD8303223189E9C001C8ECE /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8303123189E9C001C8ECE /* Rewards.swift */; };
+		6BE10C0B22F916060050EC99 /* ProfilePictureUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE10C0A22F916060050EC99 /* ProfilePictureUIView.swift */; };
+		6BE4A75F233DCCB900CE5F9C /* Date+Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4A75E233DCCB900CE5F9C /* Date+Week.swift */; };
+		6BEC903D22BCBA8F001F9FB1 /* KenkoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC903C22BCBA8F001F9FB1 /* KenkoAPI.swift */; };
+		6BECCE512327320600FFFC81 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECCE502327320600FFFC81 /* Environment.swift */; };
+		6BECCE5323275F7100FFFC81 /* TermsAndConditionsDeclarationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECCE5223275F7100FFFC81 /* TermsAndConditionsDeclarationViewController.swift */; };
+		6BF1795522EFFDB200678908 /* Date+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1795422EFFDB200678908 /* Date+Encode.swift */; };
+		6BF1795B22F2656200678908 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1795A22F2656200678908 /* ProfileViewController.swift */; };
+		6BF1AB542334A6E900CB3ADB /* VersionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1AB532334A6E900CB3ADB /* VersionService.swift */; };
+		6BF7126C231D0D46009347C7 /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF7126B231D0D46009347C7 /* String+QRCode.swift */; };
+		6BF7126E231DE735009347C7 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF7126D231DE735009347C7 /* SharingViewController.swift */; };
+		6BF71270231DF94E009347C7 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF7126F231DF94E009347C7 /* String+HTML.swift */; };
+		6BF71276231E2671009347C7 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF71275231E2671009347C7 /* ChangePasswordViewController.swift */; };
+		6BF71278231E2681009347C7 /* ChangePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF71277231E2681009347C7 /* ChangePhoneNumberViewController.swift */; };
+		CB1D187F608950836282AE3A /* Pods_KenkoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B95B830CF24132EA185E66 /* Pods_KenkoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B36B44922B709CE008957CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B36B42C22B709CD008957CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B36B43322B709CD008957CA;
+			remoteInfo = Kenko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6A030149ECD62FDEE49E2E /* Pods-Kenko.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenko.production.xcconfig"; path = "Target Support Files/Pods-Kenko/Pods-Kenko.production.xcconfig"; sourceTree = "<group>"; };
+		381FB211A8006B0AB07CECA3 /* Pods-Kenko.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenko.development.xcconfig"; path = "Target Support Files/Pods-Kenko/Pods-Kenko.development.xcconfig"; sourceTree = "<group>"; };
+		432B485C1D5704B0F2C0CDC2 /* Pods-KenkoTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenkoTests.staging.xcconfig"; path = "Target Support Files/Pods-KenkoTests/Pods-KenkoTests.staging.xcconfig"; sourceTree = "<group>"; };
+		54E0F3F858E081B2B225E3CF /* Pods-KenkoTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenkoTests.production.xcconfig"; path = "Target Support Files/Pods-KenkoTests/Pods-KenkoTests.production.xcconfig"; sourceTree = "<group>"; };
+		6B0C341C22F7A002008FD314 /* IndividualRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualRankingViewController.swift; sourceTree = "<group>"; };
+		6B0C341E22F7A1B0008FD314 /* UserRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRankingTableViewCell.swift; sourceTree = "<group>"; };
+		6B0C342022F7A5F1008FD314 /* RankingInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RankingInformation.swift; path = Kenko/Controllers/RankingInformation.swift; sourceTree = SOURCE_ROOT; };
+		6B0C342222F7D164008FD314 /* RankingSwipeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingSwipeMenuViewController.swift; sourceTree = "<group>"; };
+		6B0C342622F7EA10008FD314 /* RankingSwipeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingSwipeMenuView.swift; sourceTree = "<group>"; };
+		6B1C82C8235FCE800067E7B2 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		6B1D22D022C0BA080031A0AE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		6B1EB534232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.jp.co.senkogrouphd.hapilk.staging.plist"; sourceTree = "<group>"; };
+		6B1EB535232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.jp.co.senkogrouphd.hapilk.plist"; sourceTree = "<group>"; };
+		6B1EB536232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.development.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.jp.co.senkogrouphd.hapilk.development.plist"; sourceTree = "<group>"; };
+		6B25D17922BB22AB006D1AC8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		6B31FC1C22C9C38B008F7E4C /* GradientUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientUIView.swift; sourceTree = "<group>"; };
+		6B36B43422B709CD008957CA /* Kenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B36B43722B709CD008957CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B36B43922B709CD008957CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B36B43E22B709CE008957CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B36B44322B709CE008957CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B36B44822B709CE008957CA /* KenkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B36B44C22B709CE008957CA /* KenkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenkoTests.swift; sourceTree = "<group>"; };
+		6B36B44E22B709CE008957CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B39506922CDE24D008F3799 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B39506B22E52550008F3799 /* ColoredUITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredUITabBarItem.swift; sourceTree = "<group>"; };
+		6B407252230A1997004A01DC /* HealthManagementDeclarationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagementDeclarationViewController.swift; sourceTree = "<group>"; };
+		6B52C26822B71175001C15B3 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		6B54AB1E230BC20600967E9D /* EditDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDashboardViewController.swift; sourceTree = "<group>"; };
+		6B5C8C9B22E981140054C82E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = Kenko/UserProfile.swift; sourceTree = SOURCE_ROOT; };
+		6B5D850722CC461400DB823B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		6B5D850F22CD8C8100DB823B /* UIViewController+ValidationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ValidationAlert.swift"; sourceTree = "<group>"; };
+		6B5D8EC122B717DB001B4AF5 /* RoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIButton.swift; sourceTree = "<group>"; };
+		6B5D8EC322B717EE001B4AF5 /* RoundedUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUITextField.swift; sourceTree = "<group>"; };
+		6B5F71B022C0BE22008482C7 /* Kenko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kenko.entitlements; sourceTree = "<group>"; };
+		6B5F71B122C0BE22008482C7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		6B5F71BC22C0C1E1008482C7 /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
+		6B612FC4230295AB006C7BEA /* String+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Decode.swift"; sourceTree = "<group>"; };
+		6B612FC623039373006C7BEA /* PointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
+		6B612FCA23039599006C7BEA /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		6B61BAB12361214C0003FFBA /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		6B653AD522CAD7EE00CC21EA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		6B653AD722CAE59F00CC21EA /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		6B6C602A22B876BC003B0D84 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6B6C602C22B87E8C003B0D84 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		6B715A432345E307000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		6B715A462345E325000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B715A492345E328000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Navigation.storyboard; sourceTree = "<group>"; };
+		6B715A4C2345E330000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ForgotPassword.storyboard; sourceTree = "<group>"; };
+		6B715A4F2345E335000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		6B715A522345E339000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		6B715A552345E33C000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Points.storyboard; sourceTree = "<group>"; };
+		6B715A582345E33F000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Registration.storyboard; sourceTree = "<group>"; };
+		6B715A5B2345E343000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Ranking.storyboard; sourceTree = "<group>"; };
+		6B715A5E2345E346000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		6B715A612345E34A000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Terms.storyboard; sourceTree = "<group>"; };
+		6B715A642345E34D000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		6B715A672345E350000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChangePhoneNumber.storyboard; sourceTree = "<group>"; };
+		6B715A6A2345E353000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChangePassword.storyboard; sourceTree = "<group>"; };
+		6B715A6D2345E357000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthManagement.storyboard; sourceTree = "<group>"; };
+		6B715A702345E35B000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Share.storyboard; sourceTree = "<group>"; };
+		6B715A732345E35F000DEF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ContactUs.storyboard; sourceTree = "<group>"; };
+		6B729EBA2330AFC0005BA10C /* UITextField+MaxLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+MaxLength.swift"; sourceTree = "<group>"; };
+		6B7E8FFC22C48F5A00BD38B9 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		6B82DE3D22F3AEA8008790F6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6B84494822EE6BAC00CB329C /* SenkoOffices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SenkoOffices.swift; path = Kenko/SenkoOffices.swift; sourceTree = SOURCE_ROOT; };
+		6B84494E22EE6E6600CB329C /* JapanPrefectures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JapanPrefectures.swift; path = Kenko/JapanPrefectures.swift; sourceTree = SOURCE_ROOT; };
+		6B899FC72339E87F0016AB54 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		6B996E5C2329DAC80014E721 /* UIViewController+CanPerformSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CanPerformSegue.swift"; sourceTree = "<group>"; };
+		6BA69F3622FB9B7C002B1B45 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthData.swift; path = Kenko/Controllers/HealthData.swift; sourceTree = SOURCE_ROOT; };
+		6BA702DD2343121E00BE9E50 /* CompanyRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRankingTableViewCell.swift; sourceTree = "<group>"; };
+		6BB7B71A2384B08A003A21BF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		6BB8392722F944C800EFB7C7 /* GeneralRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRankingTableViewCell.swift; sourceTree = "<group>"; };
+		6BBBA0C02332FC8E00AE4A3D /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
+		6BCA7146237E962000C8046F /* Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Announcements.storyboard; sourceTree = "<group>"; };
+		6BCA714A2382210300C8046F /* Announcements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Announcements.swift; path = Kenko/Controllers/Announcements.swift; sourceTree = SOURCE_ROOT; };
+		6BCA714C238231FF00C8046F /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
+		6BCA714E238236B000C8046F /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		6BD830232313B388001C8ECE /* PrefectureRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureRankingViewController.swift; sourceTree = "<group>"; };
+		6BD830252313B39E001C8ECE /* AgeRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRankingViewController.swift; sourceTree = "<group>"; };
+		6BD8302B2313B6D2001C8ECE /* CompanyRankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyRankingViewController.swift; sourceTree = "<group>"; };
+		6BD8302D2313C57D001C8ECE /* Double+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Formatted.swift"; sourceTree = "<group>"; };
+		6BD8303123189E9C001C8ECE /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rewards.swift; path = Kenko/Extensions/Rewards.swift; sourceTree = SOURCE_ROOT; };
+		6BE10C0A22F916060050EC99 /* ProfilePictureUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureUIView.swift; sourceTree = "<group>"; };
+		6BE4A75E233DCCB900CE5F9C /* Date+Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Week.swift"; sourceTree = "<group>"; };
+		6BE709C922BC7CEC00A1202D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		6BE709CB22BC7CF700A1202D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		6BE709CD22BC7CFA00A1202D /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		6BE709CF22BC7CFF00A1202D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		6BE709D122BC7D0500A1202D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		6BEC903C22BCBA8F001F9FB1 /* KenkoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenkoAPI.swift; sourceTree = "<group>"; };
+		6BECCE502327320600FFFC81 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		6BECCE5223275F7100FFFC81 /* TermsAndConditionsDeclarationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsDeclarationViewController.swift; sourceTree = "<group>"; };
+		6BF1795422EFFDB200678908 /* Date+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Encode.swift"; sourceTree = "<group>"; };
+		6BF1795A22F2656200678908 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6BF1AB532334A6E900CB3ADB /* VersionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionService.swift; sourceTree = "<group>"; };
+		6BF7126B231D0D46009347C7 /* String+QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
+		6BF7126D231DE735009347C7 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
+		6BF7126F231DF94E009347C7 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		6BF71275231E2671009347C7 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		6BF71277231E2681009347C7 /* ChangePhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneNumberViewController.swift; sourceTree = "<group>"; };
+		77608AC1FD01EC334CC23352 /* Pods-KenkoTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenkoTests.development.xcconfig"; path = "Target Support Files/Pods-KenkoTests/Pods-KenkoTests.development.xcconfig"; sourceTree = "<group>"; };
+		D5B95B830CF24132EA185E66 /* Pods_KenkoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KenkoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E1AB045020BC0857249CEC /* Pods-Kenko.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenko.staging.xcconfig"; path = "Target Support Files/Pods-Kenko/Pods-Kenko.staging.xcconfig"; sourceTree = "<group>"; };
+		EE3FF6ED1B41D86A7078921F /* Pods_Kenko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B36B43122B709CD008957CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B77BEB222C32F8500707C51 /* HealthKit.framework in Frameworks */,
+				1F55AC0096E63DD84487597B /* Pods_Kenko.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36B44522B709CE008957CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1D187F608950836282AE3A /* Pods_KenkoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EF984B4A27A7279828A312 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				381FB211A8006B0AB07CECA3 /* Pods-Kenko.development.xcconfig */,
+				D7E1AB045020BC0857249CEC /* Pods-Kenko.staging.xcconfig */,
+				0C6A030149ECD62FDEE49E2E /* Pods-Kenko.production.xcconfig */,
+				77608AC1FD01EC334CC23352 /* Pods-KenkoTests.development.xcconfig */,
+				432B485C1D5704B0F2C0CDC2 /* Pods-KenkoTests.staging.xcconfig */,
+				54E0F3F858E081B2B225E3CF /* Pods-KenkoTests.production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B1EB532232721E200A4CF23 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6B1EB533232721E200A4CF23 /* Firebase */,
+				6BECCE502327320600FFFC81 /* Environment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		6B1EB533232721E200A4CF23 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6B1EB534232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.staging.plist */,
+				6B1EB535232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.plist */,
+				6B1EB536232721E200A4CF23 /* GoogleService-Info.jp.co.senkogrouphd.hapilk.development.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		6B36B42B22B709CD008957CA = {
+			isa = PBXGroup;
+			children = (
+				6B36B43622B709CD008957CA /* Kenko */,
+				6B36B44B22B709CE008957CA /* KenkoTests */,
+				6B36B43522B709CD008957CA /* Products */,
+				6B52C26722B71175001C15B3 /* Frameworks */,
+				04EF984B4A27A7279828A312 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6B36B43522B709CD008957CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B36B43422B709CD008957CA /* Kenko.app */,
+				6B36B44822B709CE008957CA /* KenkoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B36B43622B709CD008957CA /* Kenko */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC903B22BCBA81001F9FB1 /* API */,
+				6B5D8EC022B717BA001B4AF5 /* Components */,
+				6B1EB532232721E200A4CF23 /* Configuration */,
+				6B82DE3C22F3AE97008790F6 /* Contants */,
+				6B6C602222B75AEB003B0D84 /* Controllers */,
+				6B5D850E22CD8C7100DB823B /* Extensions */,
+				6B6C602322B75B01003B0D84 /* Models */,
+				6B5F71BB22C0C1D2008482C7 /* Services */,
+				6BFD02B222C4642F00DF26CF /* Storyboards */,
+				6B36B43722B709CD008957CA /* AppDelegate.swift */,
+				6B36B43922B709CD008957CA /* ViewController.swift */,
+				6B36B43E22B709CE008957CA /* Assets.xcassets */,
+				6B36B44322B709CE008957CA /* Info.plist */,
+				6B5F71B022C0BE22008482C7 /* Kenko.entitlements */,
+			);
+			path = Kenko;
+			sourceTree = "<group>";
+		};
+		6B36B44B22B709CE008957CA /* KenkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B36B44C22B709CE008957CA /* KenkoTests.swift */,
+				6B36B44E22B709CE008957CA /* Info.plist */,
+			);
+			path = KenkoTests;
+			sourceTree = "<group>";
+		};
+		6B52C26722B71175001C15B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B5F71B122C0BE22008482C7 /* HealthKit.framework */,
+				6BE709D122BC7D0500A1202D /* SwiftyJSON.framework */,
+				6BE709CF22BC7CFF00A1202D /* Result.framework */,
+				6BE709CD22BC7CFA00A1202D /* ReactiveMoya.framework */,
+				6BE709CB22BC7CF700A1202D /* Moya.framework */,
+				6BE709C922BC7CEC00A1202D /* Alamofire.framework */,
+				6B52C26822B71175001C15B3 /* IQKeyboardManagerSwift.framework */,
+				EE3FF6ED1B41D86A7078921F /* Pods_Kenko.framework */,
+				D5B95B830CF24132EA185E66 /* Pods_KenkoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B5D850E22CD8C7100DB823B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D850F22CD8C8100DB823B /* UIViewController+ValidationAlert.swift */,
+				6B996E5C2329DAC80014E721 /* UIViewController+CanPerformSegue.swift */,
+				6BF1795422EFFDB200678908 /* Date+Encode.swift */,
+				6B612FC4230295AB006C7BEA /* String+Decode.swift */,
+				6BD8302D2313C57D001C8ECE /* Double+Formatted.swift */,
+				6BF7126B231D0D46009347C7 /* String+QRCode.swift */,
+				6BF7126F231DF94E009347C7 /* String+HTML.swift */,
+				6B729EBA2330AFC0005BA10C /* UITextField+MaxLength.swift */,
+				6BE4A75E233DCCB900CE5F9C /* Date+Week.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B5D8EC022B717BA001B4AF5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6B31FC1C22C9C38B008F7E4C /* GradientUIView.swift */,
+				6B5D8EC322B717EE001B4AF5 /* RoundedUITextField.swift */,
+				6B5D8EC122B717DB001B4AF5 /* RoundedUIButton.swift */,
+				6B39506B22E52550008F3799 /* ColoredUITabBarItem.swift */,
+				6BE10C0A22F916060050EC99 /* ProfilePictureUIView.swift */,
+				6B612FCA23039599006C7BEA /* PointView.swift */,
+				6BB7B71A2384B08A003A21BF /* CheckBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6B5F71BB22C0C1D2008482C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B5F71BC22C0C1E1008482C7 /* HealthService.swift */,
+				6B653AD722CAE59F00CC21EA /* Validation.swift */,
+				6BBBA0C02332FC8E00AE4A3D /* NotificationsService.swift */,
+				6BF1AB532334A6E900CB3ADB /* VersionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B6C602222B75AEB003B0D84 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D22D022C0BA080031A0AE /* DashboardViewController.swift */,
+				6B653AD522CAD7EE00CC21EA /* ForgotPasswordViewController.swift */,
+				6B6C602A22B876BC003B0D84 /* LoginViewController.swift */,
+				6B25D17922BB22AB006D1AC8 /* OnboardingViewController.swift */,
+				6B6C602C22B87E8C003B0D84 /* RegistrationViewController.swift */,
+				6B7E8FFC22C48F5A00BD38B9 /* TermsViewController.swift */,
+				6B39506922CDE24D008F3799 /* SettingsViewController.swift */,
+				6BF1795A22F2656200678908 /* ProfileViewController.swift */,
+				6B0C341C22F7A002008FD314 /* IndividualRankingViewController.swift */,
+				6B0C341E22F7A1B0008FD314 /* UserRankingTableViewCell.swift */,
+				6B0C342222F7D164008FD314 /* RankingSwipeMenuViewController.swift */,
+				6B0C342622F7EA10008FD314 /* RankingSwipeMenuView.swift */,
+				6BD8302B2313B6D2001C8ECE /* CompanyRankingViewController.swift */,
+				6BB8392722F944C800EFB7C7 /* GeneralRankingTableViewCell.swift */,
+				6B407252230A1997004A01DC /* HealthManagementDeclarationViewController.swift */,
+				6B54AB1E230BC20600967E9D /* EditDashboardViewController.swift */,
+				6BD830232313B388001C8ECE /* PrefectureRankingViewController.swift */,
+				6BD830252313B39E001C8ECE /* AgeRankingViewController.swift */,
+				6B612FC623039373006C7BEA /* PointsViewController.swift */,
+				6BF7126D231DE735009347C7 /* SharingViewController.swift */,
+				6BF71275231E2671009347C7 /* ChangePasswordViewController.swift */,
+				6BF71277231E2681009347C7 /* ChangePhoneNumberViewController.swift */,
+				6BECCE5223275F7100FFFC81 /* TermsAndConditionsDeclarationViewController.swift */,
+				6B899FC72339E87F0016AB54 /* ContactUsViewController.swift */,
+				6BA702DD2343121E00BE9E50 /* CompanyRankingTableViewCell.swift */,
+				6B1C82C8235FCE800067E7B2 /* TicketViewController.swift */,
+				6B61BAB12361214C0003FFBA /* NavigationViewController.swift */,
+				6BCA714C238231FF00C8046F /* AnnouncementsViewController.swift */,
+				6BCA714E238236B000C8046F /* AnnouncementViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B6C602322B75B01003B0D84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B0C342022F7A5F1008FD314 /* RankingInformation.swift */,
+				6B5C8C9B22E981140054C82E /* UserProfile.swift */,
+				6B84494822EE6BAC00CB329C /* SenkoOffices.swift */,
+				6B84494E22EE6E6600CB329C /* JapanPrefectures.swift */,
+				6BA69F3622FB9B7C002B1B45 /* HealthData.swift */,
+				6BD8303123189E9C001C8ECE /* Rewards.swift */,
+				6BCA714A2382210300C8046F /* Announcements.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B82DE3C22F3AE97008790F6 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				6B82DE3D22F3AEA8008790F6 /* Colors.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
+		6BEC903B22BCBA81001F9FB1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6BEC903C22BCBA8F001F9FB1 /* KenkoAPI.swift */,
+				6B5D850722CC461400DB823B /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6BFD02B222C4642F00DF26CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6B715A472345E325000DEF34 /* LaunchScreen.storyboard */,
+				6B715A4A2345E328000DEF34 /* Navigation.storyboard */,
+				6B715A442345E307000DEF34 /* Dashboard.storyboard */,
+				6B715A4D2345E330000DEF34 /* ForgotPassword.storyboard */,
+				6B715A502345E335000DEF34 /* Login.storyboard */,
+				6B715A532345E339000DEF34 /* Onboarding.storyboard */,
+				6B715A562345E33C000DEF34 /* Points.storyboard */,
+				6B715A592345E33F000DEF34 /* Registration.storyboard */,
+				6B715A5C2345E343000DEF34 /* Ranking.storyboard */,
+				6B715A5F2345E346000DEF34 /* Settings.storyboard */,
+				6B715A622345E34A000DEF34 /* Terms.storyboard */,
+				6B715A652345E34D000DEF34 /* Profile.storyboard */,
+				6B715A682345E350000DEF34 /* ChangePhoneNumber.storyboard */,
+				6B715A6B2345E353000DEF34 /* ChangePassword.storyboard */,
+				6B715A6E2345E357000DEF34 /* HealthManagement.storyboard */,
+				6B715A712345E35B000DEF34 /* Share.storyboard */,
+				6B715A742345E35F000DEF34 /* ContactUs.storyboard */,
+				6BCA7146237E962000C8046F /* Announcements.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B36B43322B709CD008957CA /* Kenko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B36B45122B709CE008957CA /* Build configuration list for PBXNativeTarget "Kenko" */;
+			buildPhases = (
+				021F4660B1EE3B1159B0651B /* [CP] Check Pods Manifest.lock */,
+				6B36B43022B709CD008957CA /* Sources */,
+				6B36B43122B709CD008957CA /* Frameworks */,
+				6BECCE4F2327301D00FFFC81 /* Copy Firebase Environment Config */,
+				6B36B43222B709CD008957CA /* Resources */,
+				6B5AA60822B9BF7C0013567B /* Check swiftlint code styling */,
+				64E35FBCDF91816711D9867F /* [CP] Embed Pods Frameworks */,
+				6B02A320232A24840015C6B0 /* Firebase Crashlytics Setup */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kenko;
+			productName = Kenko;
+			productReference = 6B36B43422B709CD008957CA /* Kenko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B36B44722B709CE008957CA /* KenkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B36B45422B709CE008957CA /* Build configuration list for PBXNativeTarget "KenkoTests" */;
+			buildPhases = (
+				6F5F20E200970B7512AB0D3B /* [CP] Check Pods Manifest.lock */,
+				6B36B44422B709CE008957CA /* Sources */,
+				6B36B44522B709CE008957CA /* Frameworks */,
+				6B36B44622B709CE008957CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B36B44A22B709CE008957CA /* PBXTargetDependency */,
+			);
+			name = KenkoTests;
+			productName = KenkoTests;
+			productReference = 6B36B44822B709CE008957CA /* KenkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B36B42C22B709CD008957CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Innovatech Studio Co., LTD.";
+				TargetAttributes = {
+					6B36B43322B709CD008957CA = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					6B36B44722B709CE008957CA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6B36B43322B709CD008957CA;
+					};
+				};
+			};
+			buildConfigurationList = 6B36B42F22B709CD008957CA /* Build configuration list for PBXProject "Kenko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ja,
+				Base,
+			);
+			mainGroup = 6B36B42B22B709CD008957CA;
+			productRefGroup = 6B36B43522B709CD008957CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B36B43322B709CD008957CA /* Kenko */,
+				6B36B44722B709CE008957CA /* KenkoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B36B43222B709CD008957CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B715A4E2345E335000DEF34 /* Login.storyboard in Resources */,
+				6B715A662345E350000DEF34 /* ChangePhoneNumber.storyboard in Resources */,
+				6B715A572345E33F000DEF34 /* Registration.storyboard in Resources */,
+				6B715A5D2345E346000DEF34 /* Settings.storyboard in Resources */,
+				6B715A6C2345E357000DEF34 /* HealthManagement.storyboard in Resources */,
+				6B715A602345E34A000DEF34 /* Terms.storyboard in Resources */,
+				6B715A542345E33C000DEF34 /* Points.storyboard in Resources */,
+				6B715A512345E339000DEF34 /* Onboarding.storyboard in Resources */,
+				6B715A692345E353000DEF34 /* ChangePassword.storyboard in Resources */,
+				6B715A452345E325000DEF34 /* LaunchScreen.storyboard in Resources */,
+				6B715A482345E328000DEF34 /* Navigation.storyboard in Resources */,
+				6B36B43F22B709CE008957CA /* Assets.xcassets in Resources */,
+				6B715A422345E307000DEF34 /* Dashboard.storyboard in Resources */,
+				6BCA7147237E962000C8046F /* Announcements.storyboard in Resources */,
+				6B715A722345E35F000DEF34 /* ContactUs.storyboard in Resources */,
+				6B715A5A2345E343000DEF34 /* Ranking.storyboard in Resources */,
+				6B715A632345E34D000DEF34 /* Profile.storyboard in Resources */,
+				6B715A6F2345E35B000DEF34 /* Share.storyboard in Resources */,
+				6B715A4B2345E330000DEF34 /* ForgotPassword.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36B44622B709CE008957CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021F4660B1EE3B1159B0651B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kenko-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64E35FBCDF91816711D9867F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenko/Pods-Kenko-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenko/Pods-Kenko-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kenko/Pods-Kenko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B02A320232A24840015C6B0 /* Firebase Crashlytics Setup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Firebase Crashlytics Setup";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		6B5AA60822B9BF7C0013567B /* Check swiftlint code styling */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check swiftlint code styling";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		6BECCE4F2327301D00FFFC81 /* Copy Firebase Environment Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Firebase Environment Config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/Configuration/Firebase/GoogleService-Info.${PRODUCT_BUNDLE_IDENTIFIER}.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
+		};
+		6F5F20E200970B7512AB0D3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KenkoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B36B43022B709CD008957CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7E8FFD22C48F5A00BD38B9 /* TermsViewController.swift in Sources */,
+				6B996E5D2329DAC80014E721 /* UIViewController+CanPerformSegue.swift in Sources */,
+				6BECCE512327320600FFFC81 /* Environment.swift in Sources */,
+				6BF1AB542334A6E900CB3ADB /* VersionService.swift in Sources */,
+				6B407253230A1997004A01DC /* HealthManagementDeclarationViewController.swift in Sources */,
+				6B82DE3E22F3AEA8008790F6 /* Colors.swift in Sources */,
+				6B0C341F22F7A1B0008FD314 /* UserRankingTableViewCell.swift in Sources */,
+				6B36B43A22B709CD008957CA /* ViewController.swift in Sources */,
+				6BE4A75F233DCCB900CE5F9C /* Date+Week.swift in Sources */,
+				6B31FC1D22C9C38B008F7E4C /* GradientUIView.swift in Sources */,
+				6BF71270231DF94E009347C7 /* String+HTML.swift in Sources */,
+				6BD830262313B39E001C8ECE /* AgeRankingViewController.swift in Sources */,
+				6B729EBB2330AFC0005BA10C /* UITextField+MaxLength.swift in Sources */,
+				6B84494922EE6BAC00CB329C /* SenkoOffices.swift in Sources */,
+				6B0C341D22F7A002008FD314 /* IndividualRankingViewController.swift in Sources */,
+				6B1D22D122C0BA080031A0AE /* DashboardViewController.swift in Sources */,
+				6BA702DE2343121E00BE9E50 /* CompanyRankingTableViewCell.swift in Sources */,
+				6B653AD822CAE59F00CC21EA /* Validation.swift in Sources */,
+				6BF71278231E2681009347C7 /* ChangePhoneNumberViewController.swift in Sources */,
+				6BA69F3722FB9B7C002B1B45 /* HealthData.swift in Sources */,
+				6BCA714B2382210300C8046F /* Announcements.swift in Sources */,
+				6B0C342322F7D164008FD314 /* RankingSwipeMenuViewController.swift in Sources */,
+				6BF7126E231DE735009347C7 /* SharingViewController.swift in Sources */,
+				6B0C342122F7A5F1008FD314 /* RankingInformation.swift in Sources */,
+				6BB7B71B2384B08A003A21BF /* CheckBox.swift in Sources */,
+				6BE10C0B22F916060050EC99 /* ProfilePictureUIView.swift in Sources */,
+				6BECCE5323275F7100FFFC81 /* TermsAndConditionsDeclarationViewController.swift in Sources */,
+				6BCA714F238236B000C8046F /* AnnouncementViewController.swift in Sources */,
+				6B5D850822CC461400DB823B /* Network.swift in Sources */,
+				6B612FC5230295AB006C7BEA /* String+Decode.swift in Sources */,
+				6BCA714D238231FF00C8046F /* AnnouncementsViewController.swift in Sources */,
+				6B612FC723039373006C7BEA /* PointsViewController.swift in Sources */,
+				6B84494F22EE6E6600CB329C /* JapanPrefectures.swift in Sources */,
+				6B36B43822B709CD008957CA /* AppDelegate.swift in Sources */,
+				6BD8303223189E9C001C8ECE /* Rewards.swift in Sources */,
+				6BD8302C2313B6D2001C8ECE /* CompanyRankingViewController.swift in Sources */,
+				6B25D17A22BB22AB006D1AC8 /* OnboardingViewController.swift in Sources */,
+				6BB8392822F944C800EFB7C7 /* GeneralRankingTableViewCell.swift in Sources */,
+				6BEC903D22BCBA8F001F9FB1 /* KenkoAPI.swift in Sources */,
+				6B54AB1F230BC20600967E9D /* EditDashboardViewController.swift in Sources */,
+				6B39506C22E52550008F3799 /* ColoredUITabBarItem.swift in Sources */,
+				6BBBA0C12332FC8E00AE4A3D /* NotificationsService.swift in Sources */,
+				6B5F71BD22C0C1E1008482C7 /* HealthService.swift in Sources */,
+				6B6C602D22B87E8C003B0D84 /* RegistrationViewController.swift in Sources */,
+				6B5C8C9C22E981140054C82E /* UserProfile.swift in Sources */,
+				6BF1795B22F2656200678908 /* ProfileViewController.swift in Sources */,
+				6B5D8EC222B717DB001B4AF5 /* RoundedUIButton.swift in Sources */,
+				6BD830242313B388001C8ECE /* PrefectureRankingViewController.swift in Sources */,
+				6B39506A22CDE24D008F3799 /* SettingsViewController.swift in Sources */,
+				6B5D851022CD8C8100DB823B /* UIViewController+ValidationAlert.swift in Sources */,
+				6B61BAB22361214C0003FFBA /* NavigationViewController.swift in Sources */,
+				6B612FCB23039599006C7BEA /* PointView.swift in Sources */,
+				6B653AD622CAD7EE00CC21EA /* ForgotPasswordViewController.swift in Sources */,
+				6B6C602B22B876BC003B0D84 /* LoginViewController.swift in Sources */,
+				6B5D8EC422B717EE001B4AF5 /* RoundedUITextField.swift in Sources */,
+				6BD8302E2313C57D001C8ECE /* Double+Formatted.swift in Sources */,
+				6B0C342722F7EA10008FD314 /* RankingSwipeMenuView.swift in Sources */,
+				6BF7126C231D0D46009347C7 /* String+QRCode.swift in Sources */,
+				6B1C82C9235FCE800067E7B2 /* TicketViewController.swift in Sources */,
+				6BF1795522EFFDB200678908 /* Date+Encode.swift in Sources */,
+				6BF71276231E2671009347C7 /* ChangePasswordViewController.swift in Sources */,
+				6B899FC82339E87F0016AB54 /* ContactUsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B36B44422B709CE008957CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B36B44D22B709CE008957CA /* KenkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B36B44A22B709CE008957CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B36B43322B709CD008957CA /* Kenko */;
+			targetProxy = 6B36B44922B709CE008957CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B715A442345E307000DEF34 /* Dashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A432345E307000DEF34 /* Base */,
+			);
+			name = Dashboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A472345E325000DEF34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A462345E325000DEF34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A4A2345E328000DEF34 /* Navigation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A492345E328000DEF34 /* Base */,
+			);
+			name = Navigation.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A4D2345E330000DEF34 /* ForgotPassword.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A4C2345E330000DEF34 /* Base */,
+			);
+			name = ForgotPassword.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A502345E335000DEF34 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A4F2345E335000DEF34 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A532345E339000DEF34 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A522345E339000DEF34 /* Base */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A562345E33C000DEF34 /* Points.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A552345E33C000DEF34 /* Base */,
+			);
+			name = Points.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A592345E33F000DEF34 /* Registration.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A582345E33F000DEF34 /* Base */,
+			);
+			name = Registration.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A5C2345E343000DEF34 /* Ranking.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A5B2345E343000DEF34 /* Base */,
+			);
+			name = Ranking.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A5F2345E346000DEF34 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A5E2345E346000DEF34 /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A622345E34A000DEF34 /* Terms.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A612345E34A000DEF34 /* Base */,
+			);
+			name = Terms.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A652345E34D000DEF34 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A642345E34D000DEF34 /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A682345E350000DEF34 /* ChangePhoneNumber.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A672345E350000DEF34 /* Base */,
+			);
+			name = ChangePhoneNumber.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A6B2345E353000DEF34 /* ChangePassword.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A6A2345E353000DEF34 /* Base */,
+			);
+			name = ChangePassword.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A6E2345E357000DEF34 /* HealthManagement.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A6D2345E357000DEF34 /* Base */,
+			);
+			name = HealthManagement.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A712345E35B000DEF34 /* Share.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A702345E35B000DEF34 /* Base */,
+			);
+			name = Share.storyboard;
+			sourceTree = "<group>";
+		};
+		6B715A742345E35F000DEF34 /* ContactUs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B715A732345E35F000DEF34 /* Base */,
+			);
+			name = ContactUs.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B2A7B1823263D3D005B5998 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		6B2A7B1923263D3D005B5998 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E1AB045020BC0857249CEC /* Pods-Kenko.staging.xcconfig */;
+			buildSettings = {
+				APP_NAME = "Hapilk Stg";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kenko/Kenko.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GOOGLE_SERVICE_URL_TYPE = "com.googleusercontent.apps.1045397988997-1odlp772427oiq20coleb2ipdhd6b0rt";
+				HAPILK_API = "https://api.stg.hapilk.com";
+				HAPILK_CONTACT = "kenko-stg@innovatech.studio";
+				HAPILK_WEB = "https://stg.hapilk.com";
+				INFOPLIST_FILE = Kenko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.senkogrouphd.hapilk.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Hapilk Staging Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Staging;
+		};
+		6B2A7B1A23263D3D005B5998 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432B485C1D5704B0F2C0CDC2 /* Pods-KenkoTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				INFOPLIST_FILE = KenkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = innovatech.studio.KenkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kenko.app/Kenko";
+			};
+			name = Staging;
+		};
+		6B2A7B1E23263D4A005B5998 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		6B2A7B1F23263D4A005B5998 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6A030149ECD62FDEE49E2E /* Pods-Kenko.production.xcconfig */;
+			buildSettings = {
+				APP_NAME = Hapilk;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kenko/Kenko.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GOOGLE_SERVICE_URL_TYPE = "com.googleusercontent.apps.541268523710-ln5n85hmaggde5ihhdp01js48q99kalh";
+				HAPILK_API = "https://api.hapilk.com";
+				HAPILK_CONTACT = "kensui-skgh@sknet.senko.co.jp";
+				HAPILK_WEB = "https://hapilk.com";
+				INFOPLIST_FILE = Kenko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.senkogrouphd.hapilk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Hapilk;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Production;
+		};
+		6B2A7B2023263D4A005B5998 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E0F3F858E081B2B225E3CF /* Pods-KenkoTests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				INFOPLIST_FILE = KenkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = innovatech.studio.KenkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kenko.app/Kenko";
+			};
+			name = Production;
+		};
+		6B36B44F22B709CE008957CA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		6B36B45222B709CE008957CA /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381FB211A8006B0AB07CECA3 /* Pods-Kenko.development.xcconfig */;
+			buildSettings = {
+				APP_NAME = "Hapilk Dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kenko/Kenko.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GOOGLE_SERVICE_URL_TYPE = "com.googleusercontent.apps.541191443227-s3459iunrss6l8rpugde4v1pu9942iua";
+				HAPILK_API = "https://api.dev.hapilk.com";
+				HAPILK_CONTACT = "kenko-dev@innovatech.studio";
+				HAPILK_WEB = "https://dev.hapilk.com";
+				INFOPLIST_FILE = Kenko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.senkogrouphd.hapilk.development;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Hapilk Development Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Development;
+		};
+		6B36B45522B709CE008957CA /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77608AC1FD01EC334CC23352 /* Pods-KenkoTests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P625W44XMJ;
+				INFOPLIST_FILE = KenkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = innovatech.studio.KenkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kenko.app/Kenko";
+			};
+			name = Development;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B36B42F22B709CD008957CA /* Build configuration list for PBXProject "Kenko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B36B44F22B709CE008957CA /* Development */,
+				6B2A7B1823263D3D005B5998 /* Staging */,
+				6B2A7B1E23263D4A005B5998 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		6B36B45122B709CE008957CA /* Build configuration list for PBXNativeTarget "Kenko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B36B45222B709CE008957CA /* Development */,
+				6B2A7B1923263D3D005B5998 /* Staging */,
+				6B2A7B1F23263D4A005B5998 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		6B36B45422B709CE008957CA /* Build configuration list for PBXNativeTarget "KenkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B36B45522B709CE008957CA /* Development */,
+				6B2A7B1A23263D3D005B5998 /* Staging */,
+				6B2A7B2023263D4A005B5998 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B36B42C22B709CD008957CA /* Project object */;
+}

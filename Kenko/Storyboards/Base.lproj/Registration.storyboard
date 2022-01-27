@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZE-21-amB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="hcN-sB-2bt">
+            <objects>
+                <viewController id="LZE-21-amB" customClass="RegistrationViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dTD-Ub-ciZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はぴるく" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzD-9i-XZB">
+                                <rect key="frame" x="20" y="64" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gks-wV-pAl">
+                                <rect key="frame" x="20" y="102.5" width="374" height="546"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Elephant_Side_Sitting_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-bX-vl1">
+                                        <rect key="frame" x="0.0" y="179.5" width="374" height="187"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7HG-bX-vl1" secondAttribute="height" multiplier="2:1" id="YDN-PE-N5w"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7HG-bX-vl1" firstAttribute="centerY" secondItem="gks-wV-pAl" secondAttribute="centerY" id="G2g-Lz-4Ij"/>
+                                    <constraint firstItem="7HG-bX-vl1" firstAttribute="centerX" secondItem="gks-wV-pAl" secondAttribute="centerX" id="fBu-bR-rjC"/>
+                                    <constraint firstItem="7HG-bX-vl1" firstAttribute="width" secondItem="gks-wV-pAl" secondAttribute="width" id="jNp-SY-810"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oco-W6-w5y">
+                                <rect key="frame" x="20" y="648.5" width="374" height="193.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個人認証を行います" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-6g-QTJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="電話番号を入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hm7-nT-bon" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                        <rect key="frame" x="0.0" y="27.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zkc-oW-YXL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBT-Bn-rQv" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fWH-cG-U74"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="電話認証を開始します">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="send:" destination="LZE-21-amB" eventType="touchUpInside" id="dhT-Qw-17E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-jF-FAA" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9N2-d9-a9u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="キャンセル">
+                                            <color key="titleColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dismissButton:" destination="LZE-21-amB" eventType="touchUpInside" id="3k3-39-ttf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="stq-tB-kFa" firstAttribute="trailing" secondItem="gks-wV-pAl" secondAttribute="trailing" constant="20" id="4gz-fn-zc1"/>
+                            <constraint firstItem="stq-tB-kFa" firstAttribute="trailing" secondItem="RzD-9i-XZB" secondAttribute="trailing" constant="20" id="UkH-s3-Bk6"/>
+                            <constraint firstItem="stq-tB-kFa" firstAttribute="bottom" secondItem="Oco-W6-w5y" secondAttribute="bottom" constant="20" id="VyT-hC-7lj"/>
+                            <constraint firstItem="RzD-9i-XZB" firstAttribute="top" secondItem="stq-tB-kFa" secondAttribute="top" constant="20" id="XHK-ba-eCR"/>
+                            <constraint firstItem="gks-wV-pAl" firstAttribute="top" secondItem="RzD-9i-XZB" secondAttribute="bottom" id="b8U-Lc-m7i"/>
+                            <constraint firstItem="RzD-9i-XZB" firstAttribute="leading" secondItem="stq-tB-kFa" secondAttribute="leading" constant="20" id="eSj-9t-hYv"/>
+                            <constraint firstItem="stq-tB-kFa" firstAttribute="trailing" secondItem="Oco-W6-w5y" secondAttribute="trailing" constant="20" id="fal-TZ-I91"/>
+                            <constraint firstItem="gks-wV-pAl" firstAttribute="leading" secondItem="stq-tB-kFa" secondAttribute="leading" constant="20" id="gxb-TE-au8"/>
+                            <constraint firstItem="Oco-W6-w5y" firstAttribute="leading" secondItem="stq-tB-kFa" secondAttribute="leading" constant="20" id="nQR-li-xdB"/>
+                            <constraint firstItem="Oco-W6-w5y" firstAttribute="top" secondItem="gks-wV-pAl" secondAttribute="bottom" id="xPw-aZ-Tk2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="stq-tB-kFa"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneNumberTextField" destination="Hm7-nT-bon" id="J5j-gT-h5e"/>
+                        <segue destination="LxI-al-Ny8" kind="presentation" identifier="showVerifyCodeView" modalTransitionStyle="crossDissolve" id="bdk-I6-zx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6TL-lh-oSn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="9"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="lMh-8x-k5C">
+            <objects>
+                <viewController id="LxI-al-Ny8" customClass="RegistrationViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OsZ-kX-a2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はぴるく" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWs-1H-tMh">
+                                <rect key="frame" x="20" y="20" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXt-7B-Owk">
+                                <rect key="frame" x="20" y="58.5" width="374" height="478"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Elephant_Side_Sitting_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="eH1-j7-CRg">
+                                        <rect key="frame" x="0.0" y="145.5" width="374" height="187"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eH1-j7-CRg" secondAttribute="height" multiplier="2:1" id="Jx0-X3-iqV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eH1-j7-CRg" firstAttribute="centerX" secondItem="dXt-7B-Owk" secondAttribute="centerX" id="4YP-Lv-Ndu"/>
+                                    <constraint firstItem="eH1-j7-CRg" firstAttribute="centerY" secondItem="dXt-7B-Owk" secondAttribute="centerY" id="PPr-4P-pPx"/>
+                                    <constraint firstItem="eH1-j7-CRg" firstAttribute="width" secondItem="dXt-7B-Owk" secondAttribute="width" id="sv9-MW-Ofg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rnN-HR-kf0">
+                                <rect key="frame" x="20" y="536.5" width="374" height="251.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMSを確認して下さい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbH-au-9XL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="認証番号を入力して下さい" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yg7-pu-1V2" customClass="RoundedUITextField" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="27.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4Xe-w5-0N4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-oc-r1X" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yG1-WJ-CPQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="確認">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="verify:" destination="LxI-al-Ny8" eventType="touchUpInside" id="Jdo-ta-XMN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYm-uP-mz4" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PPX-EE-LO2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="認証番号を再送する">
+                                            <color key="titleColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resend:" destination="LxI-al-Ny8" eventType="touchUpInside" id="rRU-it-H8L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG5-op-OnV" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="201.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7vX-8y-3Rg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="キャンセル">
+                                            <color key="titleColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dismissButton:" destination="LxI-al-Ny8" eventType="touchUpInside" id="9aA-Nz-ZaH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kqy-1d-ef3" firstAttribute="trailing" secondItem="dXt-7B-Owk" secondAttribute="trailing" constant="20" id="2BJ-Je-Ens"/>
+                            <constraint firstItem="rnN-HR-kf0" firstAttribute="leading" secondItem="Kqy-1d-ef3" secondAttribute="leading" constant="20" id="Bx0-2G-q64"/>
+                            <constraint firstItem="dXt-7B-Owk" firstAttribute="top" secondItem="eWs-1H-tMh" secondAttribute="bottom" id="EvZ-if-nXl"/>
+                            <constraint firstItem="dXt-7B-Owk" firstAttribute="leading" secondItem="Kqy-1d-ef3" secondAttribute="leading" constant="20" id="S1s-ec-9Gq"/>
+                            <constraint firstItem="Kqy-1d-ef3" firstAttribute="bottom" secondItem="rnN-HR-kf0" secondAttribute="bottom" constant="20" id="Sbf-G8-D10"/>
+                            <constraint firstItem="rnN-HR-kf0" firstAttribute="top" secondItem="dXt-7B-Owk" secondAttribute="bottom" id="XQl-Lq-3QO"/>
+                            <constraint firstItem="eWs-1H-tMh" firstAttribute="leading" secondItem="Kqy-1d-ef3" secondAttribute="leading" constant="20" id="fQ2-BJ-9PM"/>
+                            <constraint firstItem="Kqy-1d-ef3" firstAttribute="trailing" secondItem="eWs-1H-tMh" secondAttribute="trailing" constant="20" id="fqi-yO-oFU"/>
+                            <constraint firstItem="Kqy-1d-ef3" firstAttribute="trailing" secondItem="rnN-HR-kf0" secondAttribute="trailing" constant="20" id="oz1-lz-8tD"/>
+                            <constraint firstItem="eWs-1H-tMh" firstAttribute="top" secondItem="Kqy-1d-ef3" secondAttribute="top" constant="20" id="sVV-dz-udH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kqy-1d-ef3"/>
+                    </view>
+                    <connections>
+                        <outlet property="verificationCodeTextField" destination="yg7-pu-1V2" id="weQ-gc-mF3"/>
+                        <segue destination="ftj-Bl-VJ1" kind="presentation" identifier="showUserRegistrationView" modalTransitionStyle="crossDissolve" id="caM-yw-ZUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBC-ag-i0u" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="9"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="oNe-rG-hfC">
+            <objects>
+                <viewController id="ftj-Bl-VJ1" customClass="RegistrationViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lta-zd-Chs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はぴるく" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-J2-Chb">
+                                <rect key="frame" x="20" y="20" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVC-b9-WPw">
+                                <rect key="frame" x="20" y="58.5" width="374" height="536"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Elephant_Side_Sitting_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="SDd-mf-BFu">
+                                        <rect key="frame" x="0.0" y="174.5" width="374" height="187"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SDd-mf-BFu" secondAttribute="height" multiplier="2:1" id="ZyX-f0-8O1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SDd-mf-BFu" firstAttribute="centerY" secondItem="lVC-b9-WPw" secondAttribute="centerY" id="7ce-Rr-9oS"/>
+                                    <constraint firstItem="SDd-mf-BFu" firstAttribute="centerX" secondItem="lVC-b9-WPw" secondAttribute="centerX" id="SrF-PW-uW6"/>
+                                    <constraint firstItem="SDd-mf-BFu" firstAttribute="width" secondItem="lVC-b9-WPw" secondAttribute="width" id="ioH-IF-7z1"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cF4-ie-HiR">
+                                <rect key="frame" x="20" y="594.5" width="374" height="193.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zBh-ZS-e5c">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4W-R7-vqB" customClass="RoundedUITextField" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="27.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OMO-vp-2FG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード確認" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jk3-TV-KIO" customClass="RoundedUITextField" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="W65-Ua-9xI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brm-YV-bny" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="i55-ch-THV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goOnboarding:" destination="ftj-Bl-VJ1" eventType="touchUpInside" id="dfd-ui-ON6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lVC-b9-WPw" firstAttribute="leading" secondItem="Gom-qd-VJp" secondAttribute="leading" constant="20" id="3QS-28-oeM"/>
+                            <constraint firstItem="cF4-ie-HiR" firstAttribute="top" secondItem="lVC-b9-WPw" secondAttribute="bottom" id="3Yd-ha-mLX"/>
+                            <constraint firstItem="Gom-qd-VJp" firstAttribute="trailing" secondItem="lVC-b9-WPw" secondAttribute="trailing" constant="20" id="Beb-C0-r6n"/>
+                            <constraint firstItem="lVC-b9-WPw" firstAttribute="top" secondItem="oZZ-J2-Chb" secondAttribute="bottom" id="H0i-ja-MOc"/>
+                            <constraint firstItem="oZZ-J2-Chb" firstAttribute="leading" secondItem="Gom-qd-VJp" secondAttribute="leading" constant="20" id="LEV-nS-NUs"/>
+                            <constraint firstItem="oZZ-J2-Chb" firstAttribute="top" secondItem="Gom-qd-VJp" secondAttribute="top" constant="20" id="SQh-Nm-DBN"/>
+                            <constraint firstItem="Gom-qd-VJp" firstAttribute="trailing" secondItem="oZZ-J2-Chb" secondAttribute="trailing" constant="20" id="fPk-3V-msY"/>
+                            <constraint firstItem="cF4-ie-HiR" firstAttribute="leading" secondItem="Gom-qd-VJp" secondAttribute="leading" constant="20" id="gdc-MC-QqG"/>
+                            <constraint firstItem="Gom-qd-VJp" firstAttribute="bottom" secondItem="cF4-ie-HiR" secondAttribute="bottom" constant="20" id="pn9-4q-e0L"/>
+                            <constraint firstItem="Gom-qd-VJp" firstAttribute="trailing" secondItem="cF4-ie-HiR" secondAttribute="trailing" constant="20" id="vhE-Ia-tGv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gom-qd-VJp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uHZ-nt-XLv"/>
+                    <connections>
+                        <outlet property="passwordConfirmationTextField" destination="jk3-TV-KIO" id="DlX-vh-7O5"/>
+                        <outlet property="passwordTextField" destination="j4W-R7-vqB" id="dPC-FD-Vwg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxv-7s-iyA" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jgX-hA-Y06"/>
+            </objects>
+            <point key="canvasLocation" x="2707" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Elephant_Side_Sitting_Blue" width="84.5" height="90"/>
+    </resources>
+</document>

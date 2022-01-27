@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kgH-3l-1ji">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Terms View Controller-->
+        <scene sceneID="GML-2M-q0e">
+            <objects>
+                <viewController id="MHD-EB-4Jd" customClass="TermsViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofB-YC-7mn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="はぴるく" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwg-pz-HlD">
+                                <rect key="frame" x="20" y="108" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QAp-ko-4CI">
+                                <rect key="frame" x="20" y="696" width="374" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvS-lA-XJI">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="nCW-EL-gsm"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="利用規約を読む">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LTr-G9-TPQ" appends="YES" id="K3W-QH-0lt"/>
+                                        </connections>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8G-FX-B4u" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="STJ-Fv-Pz6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="規約に同意する">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="l5C-TW-bqF" kind="presentation" identifier="showRegistrationView" modalTransitionStyle="crossDissolve" id="9Ph-Oa-sve"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqP-Tk-dkj" customClass="RoundedUIButton" customModule="Kenko" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9ai-3Z-lBC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="もどる">
+                                            <color key="titleColor" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.54901960780000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dismissButton:" destination="MHD-EB-4Jd" eventType="touchUpInside" id="3hi-zg-lkp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slQ-ec-msQ">
+                                <rect key="frame" x="20" y="146.5" width="374" height="549.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Elephant_Front_Happy_Blue_LegUp-1" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-jF-RtG">
+                                        <rect key="frame" x="0.0" y="181.5" width="374" height="187"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cd6-jF-RtG" secondAttribute="height" multiplier="2:1" id="PVE-TI-sdk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cd6-jF-RtG" firstAttribute="width" secondItem="slQ-ec-msQ" secondAttribute="width" id="VVD-IZ-l8e"/>
+                                    <constraint firstItem="cd6-jF-RtG" firstAttribute="centerX" secondItem="slQ-ec-msQ" secondAttribute="centerX" id="fWC-D7-Ioe"/>
+                                    <constraint firstItem="cd6-jF-RtG" firstAttribute="centerY" secondItem="slQ-ec-msQ" secondAttribute="centerY" id="fxS-o5-itl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Pf-Rl-yV1" firstAttribute="bottom" secondItem="QAp-ko-4CI" secondAttribute="bottom" constant="20" id="7yT-zj-c7S"/>
+                            <constraint firstItem="kwg-pz-HlD" firstAttribute="top" secondItem="9Pf-Rl-yV1" secondAttribute="top" constant="20" id="RBV-nT-alQ"/>
+                            <constraint firstItem="9Pf-Rl-yV1" firstAttribute="trailing" secondItem="QAp-ko-4CI" secondAttribute="trailing" constant="20" id="XaJ-yI-BYa"/>
+                            <constraint firstItem="slQ-ec-msQ" firstAttribute="leading" secondItem="9Pf-Rl-yV1" secondAttribute="leading" constant="20" id="igJ-KB-ZQd"/>
+                            <constraint firstItem="slQ-ec-msQ" firstAttribute="trailing" secondItem="9Pf-Rl-yV1" secondAttribute="trailing" constant="-20" id="ktV-u6-bBT"/>
+                            <constraint firstItem="slQ-ec-msQ" firstAttribute="top" secondItem="kwg-pz-HlD" secondAttribute="bottom" id="pgz-wY-Dcj"/>
+                            <constraint firstItem="QAp-ko-4CI" firstAttribute="leading" secondItem="9Pf-Rl-yV1" secondAttribute="leading" constant="20" id="u7g-rj-xYB"/>
+                            <constraint firstItem="9Pf-Rl-yV1" firstAttribute="trailing" secondItem="kwg-pz-HlD" secondAttribute="trailing" constant="20" id="uwv-p7-lCe"/>
+                            <constraint firstItem="QAp-ko-4CI" firstAttribute="top" secondItem="slQ-ec-msQ" secondAttribute="bottom" id="w1r-x8-qw6"/>
+                            <constraint firstItem="kwg-pz-HlD" firstAttribute="leading" secondItem="9Pf-Rl-yV1" secondAttribute="leading" constant="20" id="wGr-l2-F6d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Pf-Rl-yV1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="29C-Mx-ioV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zn-VB-9Eo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LTr-G9-TPQ">
+                    <connections>
+                        <segue destination="5Hv-la-NSw" kind="show" identifier="showTermsAndConditionsView" id="Xzh-z9-0kF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="515.625" y="-2.112676056338028"/>
+        </scene>
+        <!--利用規約-->
+        <scene sceneID="rc7-5S-VgV">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndConditionsDeclaration" id="5Hv-la-NSw" customClass="TermsAndConditionsDeclarationViewController" customModule="Kenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gI-rn-WGP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bwm-Sp-Dhm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aVP-p3-SEk" firstAttribute="bottom" secondItem="bwm-Sp-Dhm" secondAttribute="bottom" id="Fqt-Bh-KzM"/>
+                            <constraint firstItem="bwm-Sp-Dhm" firstAttribute="trailing" secondItem="aVP-p3-SEk" secondAttribute="trailing" id="Oob-ZO-hoQ"/>
+                            <constraint firstItem="bwm-Sp-Dhm" firstAttribute="top" secondItem="aVP-p3-SEk" secondAttribute="top" id="WjS-Wt-9QC"/>
+                            <constraint firstItem="bwm-Sp-Dhm" firstAttribute="leading" secondItem="aVP-p3-SEk" secondAttribute="leading" id="qLM-i7-yse"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aVP-p3-SEk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用規約" id="2pd-Mv-cQu"/>
+                    <connections>
+                        <outlet property="termsAndConditionsDeclarationTextView" destination="bwm-Sp-Dhm" id="eIr-q1-fN1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGj-WD-Wiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="-2"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="3GG-2Z-v75">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" id="l5C-TW-bqF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDN-4H-Zqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ds9-hd-icJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kgH-3l-1ji" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ijv-7B-xXB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MHD-EB-4Jd" kind="relationship" relationship="rootViewController" id="gjF-JS-3n7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ick-hH-P41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.20289855072468" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Elephant_Front_Happy_Blue_LegUp-1" width="107.5" height="89.5"/>
+    </resources>
+</document>
